@@ -1,0 +1,16 @@
+.box{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: forestgreen;
+    color: gold;
+}
+#uno{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    background: deeppink;
+   
+   
+
+}

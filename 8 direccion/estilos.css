@@ -1,0 +1,43 @@
+:root {
+    background-color: blue;
+    --COLOR1:blue;
+}
+html{
+    box-sizing: border-box;
+    font-size: 125%;
+    height: 50px;
+    width: -150px;
+    bottom: 150px;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+body{
+    font-family:fantasy ;
+    background-color: var(--COLOR1);
+    background-size: 100px;
+    background-image: url(./coreana\ nueva74.jpg);
+    background-repeat: calc(1 0 2 auto);
+    background-position: right 100vw bottom 150vh,left 120vw top 130vh;
+}
+.contenido{
+    display: flex;
+    justify-content: 100px;
+    align-items: center;
+    height: -2vh;
+    margin-bottom: 50vh;
+    margin-top: 0vw;
+    margin: block start 50px;
+}
+.card{
+    background-color: blueviolet;
+    width: 80px;
+    height: 600px;
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow: 2px -40px;
+    left: 100px;
+    top: 30%;
+}
+
+  

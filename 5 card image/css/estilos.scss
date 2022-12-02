@@ -1,0 +1,87 @@
+:root{
+    --color1:rgb(8, 8, 242);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 50px;
+    width: -150px;
+    bottom: 50px;
+}
+*, *:before, *:after{
+        box-sizing: inherit;
+    }
+body{
+    font-family: sans-serif; 
+    background-color: var(--color1);
+    background-size: 100px;
+    background-image: url(./img/coreana\ nueva50.jpg);
+    background-repeat:no-repeat;
+    background-position: right 20vw bottom 100vh,left 20vw top 20vh;
+
+}
+.contenedor{
+    display:flex;
+    justify-content: 100px;
+    align-items: center;
+    height: 3vh;
+    margin-bottom:150vh;
+    margin-top: 200vw;
+    margin: block start 50px;
+}
+.card{
+    background-color: rgb(65, 65, 179);
+    width: 500px;
+    height: -100px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 1px -30px 140px black;
+ &-header{
+        width: 30%;
+        height: -350px;
+        bottom: 50px;
+        box-shadow: 50px;
+        display: block;
+        justify-content: center 0, 50px 50px;
+        align-self: auto;
+        border-bottom: 50px;
+    }
+ &-body{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid var(--color1);
+ &-contentimg{
+            border: 5px solid rgb(90, 90, 3);
+            border-radius: 50%;
+            margin-top:1px;
+            background-color: burlywood;
+            box-shadow: 50px 50px 50px orange;
+            margin: 50px;
+ &-img{
+            height: 50px;
+            width: 650px;
+            padding: 20px;
+            border-radius: 500px;
+            
+            }
+&-title{
+            margin-top: 1rem;
+            font-size: 1rem;
+                span{
+            color: var(--color1);
+                }
+            }
+ &-footer{
+            display: flex;
+            justify-content: space-around;
+ &-poder{
+            text-align: center;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+      }
+}
+        }
+    }
+}

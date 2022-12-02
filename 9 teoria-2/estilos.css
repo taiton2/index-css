@@ -1,0 +1,36 @@
+body{
+    background-color: blueviolet;
+}
+.main{
+    display: flex;
+    border: 50px;
+    border-radius: 50px;
+    margin: 50px;
+}
+.contenido{
+    margin-left: 30px;
+    padding: 1px;
+}
+.img{
+    display: flex;
+    background-image: url(rostov2.jpg);
+    border-radius: 100px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+}
+.p{
+   display: flex;
+   align-items: center;
+   margin-left: 150px;
+}
+.youtube{
+    display: flex;
+    padding: 10px;
+    font-family: sans-serif;
+    height: -max-content;
+    align-items: center;
+    margin-left: 250px;
+}
+
