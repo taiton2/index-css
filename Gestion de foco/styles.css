@@ -1,0 +1,291 @@
+@import
+url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    margin: 1rem 3rem 2rem;
+    font-family: "open Sans", sans-serif;
+}
+
+button {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #006cc1;
+    font-size: 1rem;
+    max-width: 304px;
+    min-height: 120px;
+    display: inline-block;
+    padding: 9px 12px 10px;
+    border: solid 1px
+    transparent;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: center;
+    outline: none;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #CCCCCC;
+    color: #222222;
+    text-decoration: underline;
+}
+
+button:focus {
+    outline: 1px dashed #000000;
+}
+
+#app {
+    margin: auto;
+    text-align: center;
+}
+
+.dialog-trigger {
+    cursor: pointer;
+    background-color: #006cc1;
+    font-size: 15px;
+    max-width: 374px;
+    min-width: 120px;
+    display: inline-block;
+    margin-top: 0;
+    padding: 9px 12px 10px;
+    border: solid 1px
+transparent;
+    border-radius: 0;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: bottom;
+    outline: none;
+}
+
+.dialog-alert-trigger {
+    cursor: pointer;
+    background-color: #006cc1;
+    font-size: 15px;
+    max-width: 374px;
+    min-width: 120px;
+    display: inline-block;
+    margin-top: 0;
+    padding: 9px 12px 10px;
+    border: solid 1px
+transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: bottom;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.dialog-message-trigger {
+    cursor: pointer;
+    background-color: #006cc1;
+    font-size: 15px;
+    max-width: 374px;
+    min-width: 120px;
+    display: inline-block;
+    margin-top: 0;
+    padding: 9px 12px 10px;
+    border: solid 1px
+transparent;
+    border-radius: 12px;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: bottom;
+    outline: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+.dialog-message-alert-trigger {
+    cursor: pointer;
+    background-color: #006cc1;
+    font-size: 15px;
+    max-width: 374px;
+    min-width: 120px;
+    display: inline-block;
+    margin-top: 0;
+    padding: 9px 12px 10px;
+    border: solid 1px
+transparent;
+    border-radius: 0;
+    overflow: hidden;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: bottom;
+    outline: none;
+}
+
+.dialog .dialog-heading,
+.dialog-alert .dialog-heading,
+.dialog-message-alert .dialog-heading {
+    font-size: 20px;
+    color: #2F2F2F;
+    font-weight: 200;
+    line-height: normal;
+    padding: 0;
+}
+
+.dialog.dialog-noheading,
+.dialog-alert.dialog-noheading,
+.dialog-message-alert.dialog-noheading {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.dialog-notify {
+    background-color: #FF0000;
+    color: #ffffff;
+}
+.deque-wrapper .feedback-holder {
+    background-color: #fefee7;
+    border: 2px solid #f5f573;
+    padding: 20px 40px;
+    display: block;
+}
+
+.deque-wrapper form.deque[data-feedback-type] .feedback-holder {
+    outline: none;
+}
+
+.deque-wrapper .container .feedback-holder .info {
+    border-color: #000066;
+    background-color: #EEEEFF;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.deque-wrapper .container .feedback-holder .success {
+    border-color: #006600;
+    background-color: #EEFFEE;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+.deque-dialog-button .deque-dialog-button-close {
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    right: 8px;
+    top: 8px;
+    position: absolute;
+    background-color:
+transparent;
+    display: block;
+    overflow: visible;
+    max-width: 20px;
+    min-width: 20px;
+    padding: 0;
+    color: #222222;
+}
+
+.deque-dialog-button .deque-dialog-button-close span::before {
+    display: inline-block;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}
+
+.deque-dialog-buttons .deque-dialog-button-close:focus {
+    outline: 1px dashed #000000;
+}
+
+.deque-show-block .deque-dialog-screen-wrapper {
+    display: block;
+    content: "";
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0, 0.8);
+    transition: opacity 200ms;
+    opacity: 1;
+}
+
+.deque-hidden .deque-dialog-screen-wrapper {
+    display: none;
+}
+
+.deque-show-block .deque-dialog-screen {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border: 1px solid #0078d7;
+    margin: 0 auto;
+    max-height: 760px;
+    max-width: 546px;
+    padding: 24px;
+    z-index: 1000;
+    outline: none;
+    width: 80%;
+    opacity: 1;
+}
+
+.deque-show-block .deque-dialog-screen .deque-dialog-buttons {
+    margin-top: 20px;
+}
+
+.deque-hidden .deque-dialog-screen {
+    display: none;
+}
+
+.deque-dialog-button-cancel {
+    margin-left: 4px;
+}
+
+.react-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    overflow: hidden;
+    -webkit-overflow-scrolling:
+    touch;
+    outline: 0;
+}
+
+.react-modal--in {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.reeact-modal__dialog {
+    max-width: 600px;
+    width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0px, 0px, 0px, 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background-color: #000
+    !important;
+    opacity: 0.8 !important;
+}

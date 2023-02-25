@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@import url("https://fonts-googleapis.com/css2?family=Roboto+slab");
+
+@import url("https://fonts.googleapis.com/css2family=Parisienne");
+
+@import url("https://fonts.googleapis.com/css2family=Alumni+Sans+Pinstripep");
+
+@import url("https://fonts.googleapis.com/css2family=Silkscreen");
+
+@import url("https://fonts.googleapis.com/css2family=Luckiest+Guy");
+
+@import url("https://fonts.googleapis.com/css2family=Blaka+Hollow");
+
+@import url("https://fonts.googleapis.com/css2family=Lobster");
+
+body{
+    margin: 2rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin: 0 auto;
+}
+
+.grid-item{
+    padding: 0 1.25rem;
+    margin: 1rem;
+    text-align: left;
+    overflow: hidden;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+.arial{
+    font-family: Arial, sans-serif;
+}
+
+.verdana{
+    font-family: Verdana, sans-serif;
+}
+
+.open-sans{
+    font-family: "Open Sans", sans-serif;
+}
+
+.times{
+    font-family: Times New Roman, serif;
+}
+
+.georgia{
+    font-family: Georgia, serif;
+}
+
+.roboto-slab{
+    font-family: "Roboto Slab", serif;
+}
+
+.parisienne{
+    font-family: "Parisienne", cursive;
+}
+
+.pinstripe{
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+.silkscreen{
+    font-family: "Silkscreen", cursive;
+}
+
+.lucky{
+    font-family: "Luckies Guy", cursive;
+}
+
+.blaka{
+    font-family: "Blaka Hollow", cursive;
+}
+
+.lobster{
+    font-family: "Lobster", cursive;
+}

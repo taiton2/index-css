@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    font-family: "open Sans", sans-serif;
+    margin: 2rem;
+}
+
+a {
+    float: left;
+    clear: both;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+a:focus {
+    outline: none;
+}
+
+a.style1:focus {
+    outline: auto 5px Highlight;
+    outline: auto 5px -webkit-focus-ring-color;
+}
+
+a.style2:focus {
+    outline: 0.5rem solid #25aa00;
+    border-radius: 5px;
+}
+
+a.style3:focus {
+    outline: medium dashed #bf40bf;
+}
+
+a.style4:focus {
+    text-decoration: wavy underline 2px #0000ff;
+}
+
+a.style5:focus {
+    background-color: #25aa00;
+}

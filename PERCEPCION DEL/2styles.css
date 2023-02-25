@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 auto;
+}
+
+.grid-item{
+    padding: 0 1.25rem 1.5rem;
+    margin: 1rem;
+    text-align: left;
+    overflow: hidden;
+}
+
+h3{
+    margin-bottom: 0;
+    height: 0.75rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+p{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+span{
+    float: left;
+    clear: both;
+    color: #ffffff;
+}
+
+.fa-solid{
+    padding-right: 0.5rem;
+}
+
+.black{
+    color: #000000;
+}
+
+.red{
+    background: #ea4335;
+}
+
+.yellow{
+    background: #fbbc04;
+}
+
+.green{
+    background: #34a853;
+}
+
+.blue{
+    background: #4285f4;
+}

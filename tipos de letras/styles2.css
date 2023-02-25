@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css2family=Open+Sans);
+
+@import url("https://fonts.googleapis.com/css2family=PT+Sans");
+
+@import url("https://fonts.googleapis.com/css2family=Noto+Serif+HK");
+
+@import url("https://fonts.googleapis.com/css2family=Courgette");
+
+@import url("https://fonts.googleapis.com/css2family=Sora");
+
+@import url("https://fonts.googleapis.com/css2family=Marcellus");
+
+@import url("https.googleapis.com/css2family=Poiret+One");
+
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1rf));
+    margin: 0 auto;
+}
+
+.grid-item{
+    padding: 0 1.25rem 1.5rem;
+    margin: 1rem;
+    text-align: left;
+    overflow: hidden;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.25rem;
+}
+
+P{
+    font-size: 1rem;
+}
+
+.pt-sans{
+    font-family: "PT Sans", sans-serif;
+}
+
+.noto{
+    font-family: "Noto Serif HK", serif;
+}
+
+.courgette{
+    font-family: "Courgette", cursive;
+}
+
+.sora{
+    font-family: "Sora", sans-serif;
+}
+
+.marcellus{
+    font-family: "Marcellus", serif;
+}
+
+.poiret{
+    font-family: "Poiret One", cursive;
+}
