@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <link rel="stylesheet" href="style9.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+
+      $(document).ready(function(){  
+
+      var i=document.getElementById("cerrar");
+
+      i.addEventListener("click", cerrar_banner, false);
+
+      //document.getElementById("cerrar").addEventListener("click", cerrar_banner, false);
+
+      //document.getElementById("imagen1").addEventListener("click", carrito, false);
+
+      //document.getElementById("imagen2").addEventListener("click", carrito, false);
+
+      //document.getElementById("imagen3").addEventListener("click", carrito, false);
+
+      //document.getElementById("imagen4").addEventListener("click", carrito, false);
+
+      var imagenes=document.querySelectorAll("#carrete img");
+
+        for(var i=0;imagenes.length;i++){
+
+            imagenes[i].addEventListener("click", carrito, false);
+
+        }
+      
+      });
+
+      function cerrar_banner(){
+
+        $("#banner").remove();  
+
+      }
+
+      function carrito(e){
+
+        if(e.target==imagen1){
+        $("#imagen1").replaceWith("<div id='imagen1'>agregado al carro</div>");
+        }
+
+        if(e.target==imagen2){
+
+        $("#imagen2").replaceWith("<div id='imagen2'>agregado al carro</div>");
+
+        }
+
+        if(e.target==imagen3){
+
+        $("#imagen3").replaceWith("<div id='imagen3'>agregado al carro</div>");
+
+        }
+
+        if(e.target==imagen4){
+
+        $("#imagen4").replaceWith("<div id='imagen4'>agregado al carro</div>");
+
+        }
+
+      }
+
+    </script> 
+</head>
+<body>
+
+    <div id="banner">
+
+       banner de prueba
+
+    <p id="cerrar">cerrar</p>
+
+    </div>
+   
+    <div id="carrete">
+
+    <img src="img/Screenshot_20230107-165411_Instagram.jpg" id="imagen1">
+
+    <img src="img/Screenshot_20230116-113608_Instagram.jpg" id="imagen2">
+
+    <img src="img/Screenshot_20230124-103709_Instagram.jpg" id="imagen3">
+
+    <img src="img/Screenshot_20230202-113204_Instagram.jpg" id="imagen4">
+
+    </div>
+</body>
+</html>

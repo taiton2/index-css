@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style5.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script> 
+    <script>
+      $(document).ready(function(){
+
+        $("body").hide().fadeIn(5000);
+
+        alert:("Hola_mundo");
+                
+        });
+    </script>  
+</head>
+<body>
+
+    <form id="formcontacto" action="./contactar_send.php" method="post">
+<ul>
+  <li>
+    <label>Nombre *</label>
+    <input type="text" id="nombre" name="nombre" maxlength="125">
+  </li>
+  <li>
+    <label>Email *</label> 
+    <input type="text" id="email" name="email" maxlength="225">
+  </li>
+  <li>
+    <label>Teléfono</label> 
+    <input type="text" id="telefono" name="telefono" maxlength="50">
+  </li>
+  <li>
+    <label>Mensaje *</label> 
+    <textarea id="mensaje" name="mensaje" rows="5" cols="36"></textarea>
+  </li>
+  <li>
+    <input type="submit" value="Enviar">
+  </li>
+</ul>
+</form> 
+    </script>
+    <script>
+        $("#formcontacto").validate({
+            rules: {
+                nombre: { required: true, minlength: 2},
+                email: { required:true, email: true},
+                telefono: { minlength: 2, maxlength: 15},
+                mensaje: { required:true, minlength: 2},
+                validator: { required:true, maxlength: 4, minlength: 4}
+            },
+            messages: {
+                nombre: "Hector",
+                email : "gestohector6@gmail.com",
+                telefono : "+54-2213629468",
+                mensaje : "Hola-mundo",
+                validator : "N, E, T, M",
+            }
+        });    
+</script> 
+<img src="./img/Screenshot_20230124-103709_Instagram.jpg" alt="dasha" ondblclick="aviso()"> 
+</body>
+</html>

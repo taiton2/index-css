@@ -1,0 +1,34 @@
+body{
+    background-color: blueviolet;
+}
+
+img{
+    float: left;
+    margin: 35px;
+    width: 150px;
+    height: 200px;
+}
+
+#banner{
+    background-color: #f00;
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    left: 400px;
+    top: 180px;
+    font-size: 36px;
+    text-align: center;
+}
+
+#imgagen1, #imagen2, #imagen3, #imagen4{
+    float: left;
+    margin: 35px;
+    width: 150px;
+    height: 150px;
+    font-size: 36px;
+}
+
+
+
+
+

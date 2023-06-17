@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones encadenadas</title>
+    <link rel="stylesheet" href="style7.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script> 
+    <script>
+
+       $(document).ready(function(){
+
+        $("#anuncio").width(500).height(500).text("¡vende!").hide().fadeIn(10000);
+
+       });
+
+
+
+    </script>
+</head>
+<body>
+    <div id="anuncio">
+
+       ¡compra!
+
+    </div>
+    <!-- <script>
+
+       var anuncio=document.getElementById("anuncio");
+
+       anuncio.style.width="500px";
+
+       anuncio.style.height="500px";
+
+       anuncio.innerHTML="¡vende!";
+
+    </script>-->
+</body>
+</html>

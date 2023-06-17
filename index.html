@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora arcaica</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        function suma(num1, num2){
+
+           alert("la suma es:" + (num1+num2));
+
+        }
+        function resta(num1, num2){
+
+           alert("la resta es:" + (num1-num2));
+
+        }   
+        function multiplicacion(num1, num2){
+
+           alert("la multiplicacion es:" + (num1*num2));
+
+        }   
+        function division(num1, num2){
+
+           alert("la division es:" + (num1/num2));
+
+        } 
+        
+        var operador=prompt("¿que operacion deseas realizar?");
+        
+        var operador1=parseInt(prompt ("Introduce el primer numero"));
+
+        var operador2=parseInt(prompt ("Introduce el segundo numero"));
+
+        if(operador=="suma"){
+
+            suma(operador1,operador2);
+
+        }
+
+        else if(operador=="resta"){
+
+            restar(operador1,operador2);
+        }
+
+        else if(operador=="multiplicacion"){
+
+            multiplicar(operador1,operador2);
+        }
+
+        else if(operador=="division"){
+
+            dividir(operador1,operador2);
+        }
+
+        else{
+
+            alert("lo siento, operacion nula para esta accion");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

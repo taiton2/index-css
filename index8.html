@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libreria jquery</title>
+    <link rel="stylesheet" href="style8.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script> 
+    <script>
+
+       //$(document).ready(function(){
+
+        //alert($("#errores h2").html());
+
+        //$("#errores").html("<p>Hay errores en el formulario</p>");
+
+        // $("#errores").append("<p>Hay errores en el formulario</p>");
+
+        //$("#errores").prepend("<p>Hay errores en el formulario</p>");
+
+        //$("#errores").before("<p>Hay errores en el formulario</p>");
+
+        //$("#errores").after("<p>Hay errores en el formulario</p>");
+
+        //$("#errores").text("<p>Hay errores en el formulario</p>");
+
+        //$("#errores h2").text("Hay errores en el formulario");
+
+        function validar(){
+
+        var n_usuario=document.getElementById("usuario").value;
+
+            if(n_usuario==""){
+
+                $("#usuario").after("rellena este campo, por favor");
+
+            }
+
+        }
+
+       // });
+
+
+    </script>
+</head>
+<body>
+
+    <form action="" method="get">
+
+    <input name="" type="text" id="usuario"><br>
+
+    <input name="" type="text" id="nombre"><br>
+
+    <input name="" type="text" id="apellido"><br>
+
+    <input type="button" value="vacio" onclick="validar()">
+
+    </form>
+
+    <!--   <div id="contenedor">
+
+       <div id="errores" class="micontenedor">
+
+          <h2>errores</h2>
+
+       </div>
+
+    </div>-->
+    
+</body>
+</html>

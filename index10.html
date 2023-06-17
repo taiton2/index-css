@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> addclass-removeclass-toggleclass</title>
+    <link rel="stylesheet" href="style10.css">
+    <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+
+         //$("a[href^='https://']").addClass("linkdestacacursos");
+
+         document.getElementById("cursos").addEventListener("click", resalta_cursos, false);
+
+         document.getElementById("informacion").addEventListener("click", resalta_ejemplos, false);
+
+      });
+
+      function resalta_cursos(){
+
+          $(".ejemplos").removeClass("linkdestacaejemplos");
+
+          $(".cursos").addClass("linkdestacacursos");
+
+         /* $(".cursos").toggleClass("linkdestacacursos");*/
+
+      }
+
+      function resalta_ejemplos(){
+
+          $(".cursos").removeClass("linkdestacacursos");
+
+          $(".ejemplos").addClass("linkdestacaejemplos");
+
+         /* $(".ejemplos").toggleClass("linkdestacaejemplos");*/
+      }
+
+
+    </script>
+</head>
+<body>
+    <table width="100%" border="1">
+        <tr>
+          <td>cursos_destacados &nbsp;<input type="radio" name="botones" value="cursos" id="cursos"></td>
+  
+           <td>informacion_adicional &nbsp;&nbsp;<input type="radio" name="botones" value="informacion" id="informacion"></td></tr> 
+  
+      </table>
+
+    <div id="contieneEnlaces"><br>
+
+    <a href="http://www.taitont.blogspot.com" target="_blank" class="cursos">taixxx</a><br><br>
+
+    <a href="http://www.google.com" target="_blank" class="ejemplos">google</a><br><br>
+
+    <a href="https://www.youtube.com" target="_blank" class="cursos">youtube</a><br><br>
+
+    <a href="remove_reemplazar.html" target="_blank">html</a><br><br>
+
+    <a href="https://news.google.es/" target="_blank" class="ejemplos">noticias.google</a><br><br>
+
+    <a href="calculadora_arcaica.html" target="_blank">calculadora</a><br>
+
+    </div>
+    
+</body>
+</html>
